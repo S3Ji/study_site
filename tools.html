@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="ru">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <title>
+   Инструменты — SecAudit
+  </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+  <link href="css/style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <nav class="navbar navbar-expand-lg navbar-dark site-nav">
+   <div class="container">
+    <a class="navbar-brand text-white" href="index.html">
+     <i class="bi bi-shield-check">
+     </i>
+     SecAudit
+    </a>
+    <button class="navbar-toggler" data-bs-target="#nav" data-bs-toggle="collapse" type="button">
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+     <ul class="navbar-nav ms-auto">
+      <li class="nav-item">
+       <a class="nav-link" href="index.html">
+        Главная
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="about.html">
+        Об анализе
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="methodology.html">
+        Методология
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="vulnerabilities.html">
+        Уязвимости
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="tools.html">
+        Инструменты
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="report.html">
+        Отчёт
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="contacts.html">
+        Контакты
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <header class="page-header">
+   <div class="container">
+    <h1>
+     Инструменты анализа защищённости
+    </h1>
+    <p class="lead">
+     Набор средств зависит от объекта и этапа проверки. Результаты автоматизации требуют ручной проверки и интерпретации.
+    </p>
+   </div>
+  </header>
+  <main>
+   <section class="section">
+    <div class="container">
+     <span class="badge text-bg-primary mb-2">
+      Веб-приложения
+     </span>
+     <h2 class="section-title mb-4">
+      Инструменты веб-пентеста
+     </h2>
+     <div class="row g-4">
+      <div class="col-md-6 col-lg-4">
+       <article class="card h-100 p-3">
+        <img alt="Логотип Burp Suite" class="tool-logo" src="images/tool-burp.svg"/>
+        <h3 class="h5 mt-3">
+         Burp Suite
+        </h3>
+        <p class="mb-0">
+         Перехватывающий прокси для просмотра и изменения HTTP-запросов, анализа поведения приложения и ручной проверки находок.
+        </p>
+       </article>
+      </div>
+      <div class="col-md-6 col-lg-4">
+       <article class="card h-100 p-3">
+        <img alt="Логотип ZAP" class="tool-logo" src="images/tool-zap.svg"/>
+        <h3 class="h5 mt-3">
+         ZAP
+        </h3>
+        <p class="mb-0">
+         Открытый прокси и сканер для изучения HTTP-взаимодействия, построения карты приложения и автоматизированных проверок.
+        </p>
+       </article>
+      </div>
+      <div class="col-md-6 col-lg-4">
+       <article class="card h-100 p-3">
+        <img alt="Логотип проекта Nikto" class="tool-logo" src="images/tool-nikto.png"/>
+        <h3 class="h5 mt-3">
+         Nikto
+        </h3>
+        <p class="mb-0">
+         Проверяет веб-сервер на известные проблемы, устаревшее ПО, опасные файлы, доступные каталоги и ошибки конфигурации.
+        </p>
+       </article>
+      </div>
+      <div class="col-md-6 col-lg-4">
+       <article class="card h-100 p-3">
+        <img alt="Логотип проекта Nuclei" class="tool-logo" src="images/tool-nuclei.png"/>
+        <h3 class="h5 mt-3">
+         Nuclei
+        </h3>
+        <p class="mb-0">
+         Выполняет шаблонные проверки известных уязвимостей и небезопасных конфигураций, подходит для повторяемой автоматизации.
+        </p>
+       </article>
+      </div>
+      <div class="col-md-6 col-lg-4">
+       <article class="card h-100 p-3">
+        <img alt="Логотип sqlmap" class="tool-logo" src="images/tool-sqlmap.png"/>
+        <h3 class="h5 mt-3">
+         sqlmap
+        </h3>
+        <p class="mb-0">
+         Применяется для подтверждения и исследования признаков SQL-инъекций в рамках согласованной проверки.
+        </p>
+       </article>
+      </div>
+      <div class="col-md-6 col-lg-4">
+       <article class="card h-100 p-3">
+        <img alt="Логотип проекта dirsearch" class="tool-logo" src="images/tool-dirsearch.png"/>
+        <h3 class="h5 mt-3">
+         dirsearch
+        </h3>
+        <p class="mb-0">
+         Помогает находить доступные каталоги и файлы веб-приложения, отсутствующие в обычной навигации.
+        </p>
+       </article>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="section bg-white">
+    <div class="container">
+     <span class="badge text-bg-secondary mb-2">
+      Инфраструктура
+     </span>
+     <h2 class="section-title mb-4">
+      Инструменты инфраструктурного пентеста
+     </h2>
+     <div class="row g-4">
+      <div class="col-md-6 col-lg-4">
+       <article class="card h-100 p-3">
+        <img alt="Логотип Nmap" class="tool-logo" src="images/tool-nmap.svg"/>
+        <h3 class="h5 mt-3">
+         Nmap
+        </h3>
+        <p class="mb-0">
+         Обнаружение узлов, открытых портов, сетевых сервисов и их предполагаемых версий на этапе разведки.
+        </p>
+       </article>
+      </div>
+      <div class="col-md-6 col-lg-4">
+       <article class="card h-100 p-3">
+        <img alt="Логотип Greenbone OpenVAS" class="tool-logo" src="images/tool-openvas.png"/>
+        <h3 class="h5 mt-3">
+         Nessus / OpenVAS
+        </h3>
+        <p class="mb-0">
+         Сканирование инфраструктуры на известные уязвимости, отсутствующие обновления и распространённые ошибки конфигурации.
+        </p>
+       </article>
+      </div>
+      <div class="col-md-6 col-lg-4">
+       <article class="card h-100 p-3">
+        <img alt="Логотип Wireshark" class="tool-logo" src="images/tool-wireshark.png"/>
+        <h3 class="h5 mt-3">
+         Wireshark
+        </h3>
+        <p class="mb-0">
+         Захват и анализ сетевого трафика, протоколов и взаимодействия между компонентами системы.
+        </p>
+       </article>
+      </div>
+      <div class="col-md-6 col-lg-4">
+       <article class="card h-100 p-3">
+        <img alt="Логотип BloodHound" class="tool-logo" src="images/tool-bloodhound.png"/>
+        <h3 class="h5 mt-3">
+         BloodHound
+        </h3>
+        <p class="mb-0">
+         Визуализирует связи, делегированные права и потенциальные пути повышения привилегий в Active Directory.
+        </p>
+       </article>
+      </div>
+      <div class="col-md-6 col-lg-4">
+       <article class="card h-100 p-3">
+        <img alt="Логотип проекта Impacket" class="tool-logo" src="images/tool-impacket.png"/>
+        <h3 class="h5 mt-3">
+         Impacket
+        </h3>
+        <p class="mb-0">
+         Набор Python-компонентов для разрешённого взаимодействия с протоколами Windows-сетей, включая SMB, Kerberos и NTLM.
+        </p>
+       </article>
+      </div>
+      <div class="col-md-6 col-lg-4">
+       <article class="card h-100 p-3">
+        <img alt="Логотип NetExec" class="tool-logo" src="images/tool-netexec.png"/>
+        <h3 class="h5 mt-3">
+         NetExec
+        </h3>
+        <p class="mb-0">
+         Автоматизирует оценку безопасности Windows-инфраструктуры и работу с SMB, LDAP, WinRM и другими сетевыми службами.
+        </p>
+       </article>
+      </div>
+      <div class="col-md-6 col-lg-4">
+       <article class="card h-100 p-3">
+        <img alt="Логотип Metasploit Framework" class="tool-logo" src="images/tool-metasploit.png"/>
+        <h3 class="h5 mt-3">
+         Metasploit Framework
+        </h3>
+        <p class="mb-0">
+         Используется для контролируемого подтверждения возможности эксплуатации обнаруженных уязвимостей в разрешённой области тестирования.
+        </p>
+       </article>
+      </div>
+     </div>
+     <div class="alert alert-warning mt-4 mb-0">
+      Инструменты применяются только в согласованной области тестирования. Срабатывание сканера ещё не подтверждает реальную уязвимость.
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="footer py-4">
+   <div class="container">
+    © 2026 Артагалиев Амир
+   </div>
+  </footer>
+  <style>
+   .tool-logo{width:100%;height:120px;object-fit:contain;background:#fff;border:1px solid #e1e7ee;border-radius:.4rem;padding:.5rem}
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="script.js">
+  </script>
+ </body>
+</html>
+

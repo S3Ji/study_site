@@ -1,0 +1,146 @@
+:root {
+    --navy: #10243c;
+    --blue: #1769aa;
+    --line: #d7e0ea;
+    --paper: #f5f7fa;
+    --ink: #1b2733;
+}
+
+body {
+    font-family: Arial, "Segoe UI", sans-serif;
+    color: var(--ink);
+    background: var(--paper);
+    line-height: 1.65;
+}
+
+.navbar {
+    background: var(--navy) !important;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    letter-spacing: .04em;
+}
+
+.nav-link {
+    color: #d7e3ef !important;
+    font-size: .92rem;
+}
+
+    .nav-link.active,
+    .nav-link:hover {
+        color: #79c4ff !important;
+    }
+
+.hero {
+    min-height: 560px;
+    background: linear-gradient( 90deg, rgba(16, 36, 60, .93), rgba(16, 36, 60, .62) ), url('../images/hero.jpg') center / cover;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+    .hero h1 {
+        font-size: clamp(2rem, 4vw, 3.5rem);
+        max-width: 760px;
+        font-weight: 700;
+    }
+
+.page-header {
+    padding: 5rem 0 3rem;
+    background: #eaf0f6;
+    border-bottom: 1px solid var(--line);
+}
+
+    .page-header h1 {
+        font-weight: 700;
+    }
+
+.section {
+    padding: 4.5rem 0;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.card {
+    border: 1px solid var(--line);
+    box-shadow: none;
+    border-radius: .5rem;
+}
+
+.card-img-top {
+    height: 190px;
+    object-fit: cover;
+}
+
+.icon {
+    font-size: 1.5rem;
+    color: var(--blue);
+}
+
+.step {
+    border: 1px solid var(--line);
+    border-radius: .5rem;
+    padding: 1.25rem;
+    background: #fff;
+    height: 100%;
+}
+
+.flow {
+    font-weight: 700;
+    color: var(--blue);
+    letter-spacing: .04em;
+}
+
+.report-card {
+    border-left: 5px solid #d9534f;
+}
+
+.footer {
+    background: var(--navy);
+    color: #d7e3ef;
+}
+
+    .footer a {
+        color: #a9d8ff;
+        text-decoration: none;
+    }
+
+.progress {
+    height: 1.3rem;
+}
+
+.badge {
+    font-weight: 600;
+}
+
+.table thead th {
+    background: var(--navy);
+    color: #fff;
+}
+
+.contact-image {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    background: transparent;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        min-height: 500px;
+    }
+
+    .section {
+        padding: 3rem 0;
+    }
+
+    .navbar-nav {
+        padding: .5rem 0;
+    }
+}

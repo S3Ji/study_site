@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="ru">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <title>
+   Уязвимости — SecAudit
+  </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+  <link href="css/style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <nav class="navbar navbar-expand-lg navbar-dark site-nav">
+   <div class="container">
+    <a class="navbar-brand text-white" href="index.html">
+     <i class="bi bi-shield-check">
+     </i>
+     SecAudit
+    </a>
+    <button class="navbar-toggler" data-bs-target="#nav" data-bs-toggle="collapse" type="button">
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+     <ul class="navbar-nav ms-auto">
+      <li class="nav-item">
+       <a class="nav-link" href="index.html">
+        Главная
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="about.html">
+        Об анализе
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="methodology.html">
+        Методология
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="vulnerabilities.html">
+        Уязвимости
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="tools.html">
+        Инструменты
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="report.html">
+        Отчёт
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="contacts.html">
+        Контакты
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <header class="page-header">
+   <div class="container">
+    <h1>
+     Типовые уязвимости
+    </h1>
+    <p class="lead">
+     На странице отдельно рассмотрены риски веб-приложений и инфраструктуры. Описания не являются инструкциями по эксплуатации.
+    </p>
+   </div>
+  </header>
+  <main>
+   <section class="section">
+    <div class="container">
+     <div class="d-flex justify-content-between align-items-end flex-wrap gap-2 mb-4">
+      <div>
+       <span class="badge text-bg-primary mb-2">
+        Веб-приложения
+       </span>
+       <h2 class="section-title mb-0">
+        OWASP Top 10:2025
+       </h2>
+      </div>
+     </div>
+     <div class="row g-3">
+      <div class="col-md-6">
+       <article class="card h-100 p-3">
+        <h3 class="h5">
+         A01 — Нарушение контроля доступа
+        </h3>
+        <p class="mb-0">
+         Недостаточная проверка полномочий позволяет обращаться к чужим объектам или выполнять запрещённые действия.
+        </p>
+       </article>
+      </div>
+      <div class="col-md-6">
+       <article class="card h-100 p-3">
+        <h3 class="h5">
+         A02 — Ошибки конфигурации безопасности
+        </h3>
+        <p class="mb-0">
+         Опасные настройки, лишние функции, подробные ошибки и некорректные права доступа увеличивают поверхность атаки.
+        </p>
+       </article>
+      </div>
+      <div class="col-md-6">
+       <article class="card h-100 p-3">
+        <h3 class="h5">
+         A03 — Сбои безопасности цепочки поставок ПО
+        </h3>
+        <p class="mb-0">
+         Риски возникают в зависимостях, процессах сборки, репозиториях и каналах распространения компонентов.
+        </p>
+       </article>
+      </div>
+      <div class="col-md-6">
+       <article class="card h-100 p-3">
+        <h3 class="h5">
+         A04 — Криптографические ошибки
+        </h3>
+        <p class="mb-0">
+         Слабые алгоритмы, неправильное управление ключами или отсутствие защиты данных приводят к их раскрытию.
+        </p>
+       </article>
+      </div>
+      <div class="col-md-6">
+       <article class="card h-100 p-3">
+        <h3 class="h5">
+         A05 — Инъекции
+        </h3>
+        <p class="mb-0">
+         Непроверенный ввод влияет на интерпретацию команд, запросов или выражений целевой системой.
+        </p>
+       </article>
+      </div>
+      <div class="col-md-6">
+       <article class="card h-100 p-3">
+        <h3 class="h5">
+         A06 — Небезопасное проектирование
+        </h3>
+        <p class="mb-0">
+         Защитные меры отсутствуют на уровне архитектуры и бизнес-логики, поэтому отдельной настройкой проблему не устранить.
+        </p>
+       </article>
+      </div>
+      <div class="col-md-6">
+       <article class="card h-100 p-3">
+        <h3 class="h5">
+         A07 — Ошибки аутентификации
+        </h3>
+        <p class="mb-0">
+         Недостатки входа, восстановления доступа и управления сессиями позволяют выдать себя за другого пользователя.
+        </p>
+       </article>
+      </div>
+      <div class="col-md-6">
+       <article class="card h-100 p-3">
+        <h3 class="h5">
+         A08 — Нарушение целостности ПО или данных
+        </h3>
+        <p class="mb-0">
+         Приложение доверяет коду, обновлениям или данным без достаточной проверки их происхождения и целостности.
+        </p>
+       </article>
+      </div>
+      <div class="col-md-6">
+       <article class="card h-100 p-3">
+        <h3 class="h5">
+         A09 — Недостатки журналирования и оповещения
+        </h3>
+        <p class="mb-0">
+         События не фиксируются или не вызывают своевременного уведомления, что мешает обнаружить инцидент.
+        </p>
+       </article>
+      </div>
+      <div class="col-md-6">
+       <article class="card h-100 p-3">
+        <h3 class="h5">
+         A10 — Неправильная обработка исключительных условий
+        </h3>
+        <p class="mb-0">
+         Ошибки обработки сбоев и нестандартных состояний могут приводить к отказу, утечке сведений или обходу защиты.
+        </p>
+       </article>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="section bg-white">
+    <div class="container">
+     <span class="badge text-bg-secondary mb-2">
+      Инфраструктура
+     </span>
+     <h2 class="section-title mb-4">
+      Распространённые проблемы инфраструктуры
+     </h2>
+     <div class="row g-3">
+      <div class="col-md-6 col-lg-4">
+       <article class="card h-100 p-3">
+        <h3 class="h5">
+         Слабые и повторно используемые пароли
+        </h3>
+        <p class="mb-0">
+         Простые пароли сервисных и привилегированных учётных записей повышают риск компрометации домена.
+        </p>
+       </article>
+      </div>
+      <div class="col-md-6 col-lg-4">
+       <article class="card h-100 p-3">
+        <h3 class="h5">
+         Ошибки конфигурации Active Directory
+        </h3>
+        <p class="mb-0">
+         Избыточные права, опасные делегирования, слабые сервисные аккаунты и некорректные групповые политики создают цепочки повышения привилегий.
+        </p>
+       </article>
+      </div>
+      <div class="col-md-6 col-lg-4">
+       <article class="card h-100 p-3">
+        <h3 class="h5">
+         Анонимный или избыточный доступ к службам
+        </h3>
+        <p class="mb-0">
+         Открытые SMB-шары, LDAP и административные интерфейсы могут раскрывать сведения о сети или конфиденциальные файлы.
+        </p>
+       </article>
+      </div>
+      <div class="col-md-6 col-lg-4">
+       <article class="card h-100 p-3">
+        <h3 class="h5">
+         Устаревшие системы и сетевые службы
+        </h3>
+        <p class="mb-0">
+         Неподдерживаемые версии ОС, ПО и протоколов сохраняют известные уязвимости и небезопасные режимы работы.
+        </p>
+       </article>
+      </div>
+      <div class="col-md-6 col-lg-4">
+       <article class="card h-100 p-3">
+        <h3 class="h5">
+         Недостаточная сегментация сети
+        </h3>
+        <p class="mb-0">
+         Отсутствие границ между пользовательскими, серверными и административными сегментами облегчает распространение инцидента.
+        </p>
+       </article>
+      </div>
+      <div class="col-md-6 col-lg-4">
+       <article class="card h-100 p-3">
+        <h3 class="h5">
+         Небезопасное хранение учётных данных
+        </h3>
+        <p class="mb-0">
+         Пароли в сценариях, общих папках, конфигурационных файлах и старых политиках позволяют получить дополнительный доступ.
+        </p>
+       </article>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="footer py-4">
+   <div class="container">
+    © 2026 Артагалиев Амир
+   </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="script.js">
+  </script>
+ </body>
+</html>
+
